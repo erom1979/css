@@ -1,0 +1,245 @@
+body{
+	font-family: 'Dancing Script', cursive;
+	background-color: #02010a;
+	text-decoration: none;
+}
+
+img{
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+#contenido{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 900px;
+	animation: slidein 1s;
+}
+
+header{
+	background: #5b7989 ;
+	height: 85px;
+	border-radius: 10px 10px 0px 0px;
+	color: white;
+}
+
+header p{
+	margin: auto;
+	padding-left: 30px;
+	padding-top: 12px;
+	float: left;
+	font-size: 2.5em;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+#links {
+	float: right;
+	margin-top: 30px;
+	margin-right: 40px;
+	font-size: 1.3em;
+	word-spacing: 15px;
+}
+
+#links a[href$='.html']:link, :visited{
+	color: white;
+}
+
+#central{
+	text-align: center;
+	padding: 3%;
+	background-color:  #82c3a6;
+}
+
+#central img{
+	width: 80%;
+}
+
+.fotos{
+	display: flex;
+	flex-direction: row;
+	background-color: #d5c75f;
+	border: solid 1px #d5c75f;
+	text-align: center;
+}
+
+#agua{
+	width: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+
+}
+
+#cara{
+	width: 75.5%;
+	margin-left: 20%;
+	margin-right: 5%;
+	margin-top: 3.8%;
+}
+
+
+#retratoCaption{
+	margin-left: 15%;
+}
+
+.fotos [href$='.html']:link{
+	color: black;
+}
+
+.fotos [href$='.html']:visited{
+	color: black;
+}
+
+figure #agua:hover{
+	transform: rotate(10deg);
+	box-shadow: 5px 5px 2px #82c3a6;
+}
+
+figure #cara:hover{
+	
+	transform: translate(20px, -5px);
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #C6d5c5;
+	width: 100%;
+	border-radius: 0px 0px 10px 10px;
+}
+
+
+footer div{
+	width: 16%;
+	padding-left: 5.5%;
+	margin-left: 2%;
+}
+
+.categoria{
+	font-size: 1.5em;
+}
+
+footer img{
+	box-shadow: none;
+}
+
+#redes a:link{
+	text-decoration: none;
+	color:black;
+}
+
+#redes a:visited{
+	text-decoration: none;
+	color:black;
+}
+
+.fotos2{
+	display: flex;
+	flex-direction: row;
+	background-color: #d5c75f;
+	border: solid 1px #d5c75f;
+	text-align: center;
+}
+
+.fotoPagina{
+	width: 100%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+
+.fotoPagina img{
+	width: 100%;
+	margin-bottom: 20%;
+}
+
+
+#img1{
+	filter: blur(10px);
+}
+
+.par{
+	filter: grayscale(100%);
+}
+
+#img3{
+	filter: sepia(90%);
+}
+
+@media (max-width: 900px) {
+	
+	header p{
+		font-size: 1.4em;
+		margin: auto;
+		padding-left: 17px;
+		padding-top: 12px;
+		position: absolute;
+	}
+
+	#links{
+		margin-top: 47px;
+		float: left;
+		margin-left: 50px;
+		font-size: 1em;
+		position: relative;
+	}
+
+	.fotos{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin: auto;
+	}
+
+	#agua{
+		width: 75%;
+	}
+
+	#cara{
+		width: 75%;
+		margin-left: 5.5%;
+	}
+
+	#retratoCaption{
+		margin-left: 0%;
+	}
+
+	.fotos2{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin: auto;
+	}
+
+	.fotoPagina img{
+	width: 85%;
+	margin-bottom: 10%;
+	margin-top: 10%;
+	}
+
+	footer { 
+	font-size: 1em;
+	}
+
+	footer div{
+	width: 85%;
+	padding-left: 5.5%;
+	margin-left: 2%;
+	margin-top: -1%;
+	}
+}
+
+@-webkit-keyframes slidein{
+
+			0%{
+				margin-top: 150%;
+			}
+
+			60%{
+				margin-top: -5%;
+			}
+
+			100%{
+				margin-top: 0%
+			}
+}
